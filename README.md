@@ -46,3 +46,9 @@ python3 fleet_tool_registry.py --find coordination-topology
 ## License
 
 MIT — Part of the Cocapn Fleet Intelligence System
+
+## PyPI
+
+```bash
+pip install plato-shell-bridge coordination-topology spreadsheet-cells
+```

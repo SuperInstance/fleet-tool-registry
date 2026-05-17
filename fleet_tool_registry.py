@@ -62,7 +62,7 @@ TOOLS = [
         "version": "0.1.0",
         "description": "Dynamic tool loader for PLATO shells — the weapon rack",
         "repo": "https://github.com/SuperInstance/plato-shell-bridge",
-        "install_command": "pip install git+https://github.com/SuperInstance/plato-shell-bridge.git",
+        "install_command": "pip install plato-shell-bridge",
         "shell_load_command": "from plato_shell_bridge import PlatoShell",
         "capabilities": ["tool-loading", "shell-discovery", "lifecycle-management"],
         "dependencies": [],
