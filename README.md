@@ -52,3 +52,5 @@ MIT — Part of the Cocapn Fleet Intelligence System
 ```bash
 pip install plato-shell-bridge coordination-topology spreadsheet-cells
 ```
+
+| shell | infrastructure | tool loading, shell discovery, hermit crab, growth tracking |
