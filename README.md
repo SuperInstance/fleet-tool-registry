@@ -67,3 +67,53 @@ pip install plato-shell-bridge coordination-topology spreadsheet-cells
 - fleet-tool-registry (discovery)
 - seed-oscillate (research)
 - coordination-hierarchy (service)
+
+## Self-Assembly — Build Your Fleet
+
+All 11 repos form a dependency graph. Pick the components you need:
+
+```
+                        ┌─────────────────────┐
+                        │  plato-shell-bridge  │ ← Start here
+                        │  (tool loader)       │
+                        └────────┬────────────┘
+                                 │
+              ┌──────────────────┼──────────────────┐
+              ▼                  ▼                  ▼
+   ┌─────────────────┐  ┌──────────────┐  ┌──────────────┐
+   │coordination-    │  │ spreadsheet-  │  │  llm-proxy   │
+   │topology         │  │ cells         │  │ (language    │
+   │(TE algorithms)  │  │(cell sim)     │  │  oracle)     │
+   └────────┬────────┘  └──────┬───────┘  └──────────────┘
+            │                  │
+            ▼                  ▼
+   ┌─────────────────┐  ┌──────────────┐
+   │coordination-    │  │ topology-    │
+   │hierarchy        │  │ anomaly-     │
+   │(agent ranking)  │  │ detector     │
+   └────────┬────────┘  └──────┬───────┘
+            │                  │
+            ▼                  ▼
+   ┌──────────────────────────────────────┐
+   │         fleet-tool-registry          │
+   │         (you are here — discovery)   │
+   └──────────────────────────────────────┘
+```
+
+### One-Liner Bootstrap
+```bash
+curl -s https://raw.githubusercontent.com/SuperInstance/shell/main/bootstrap.py | python3
+```
+Auto-installs all PyPI packages, discovers PLATO server, registers as a fleet agent.
+
+### Minimum Viable Fleet (2 commands)
+```bash
+pip install coordination-topology plato-shell-bridge
+python3 -c "from coordination_topology import CoordinationState; print('Fleet ready')"
+```
+
+### Full Fleet (all services)
+```bash
+pip install coordination-topology spreadsheet-cells plato-shell-bridge topology-anomaly-detector
+# Then run: coordination_history.py + hierarchy_room.py + dashboard.py
+```
