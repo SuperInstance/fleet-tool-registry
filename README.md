@@ -54,3 +54,16 @@ pip install plato-shell-bridge coordination-topology spreadsheet-cells
 ```
 
 | shell | infrastructure | tool loading, shell discovery, hermit crab, growth tracking |
+
+## All 10 Published Repos
+
+- coordination-topology (algorithm) | `pip install coordination-topology`
+- spreadsheet-cells (simulation) | `pip install spreadsheet-cells`
+- plato-shell-bridge (infrastructure) | `pip install plato-shell-bridge`
+- llm-proxy (service)
+- topology-anomaly-detector (service) | `pip install topology-anomaly-detector`
+- shell (infrastructure)
+- night-wheel (automation)
+- fleet-tool-registry (discovery)
+- seed-oscillate (research)
+- coordination-hierarchy (service)

@@ -1,0 +1,56 @@
+[
+  {
+    "tool_name": "coordination-topology",
+    "version": "0.1.0",
+    "type": "algorithm",
+    "pypi": "pip install coordination-topology"
+  },
+  {
+    "tool_name": "spreadsheet-cells",
+    "version": "0.1.0",
+    "type": "simulation",
+    "pypi": "pip install spreadsheet-cells"
+  },
+  {
+    "tool_name": "plato-shell-bridge",
+    "version": "0.1.0",
+    "type": "infrastructure",
+    "pypi": "pip install plato-shell-bridge"
+  },
+  {
+    "tool_name": "llm-proxy",
+    "version": "0.1.0",
+    "type": "service"
+  },
+  {
+    "tool_name": "topology-anomaly-detector",
+    "version": "0.1.0",
+    "type": "service",
+    "pypi": "pip install topology-anomaly-detector"
+  },
+  {
+    "tool_name": "shell",
+    "version": "0.1.0",
+    "type": "infrastructure"
+  },
+  {
+    "tool_name": "night-wheel",
+    "version": "0.1.0",
+    "type": "automation"
+  },
+  {
+    "tool_name": "fleet-tool-registry",
+    "version": "0.1.0",
+    "type": "discovery"
+  },
+  {
+    "tool_name": "seed-oscillate",
+    "version": "0.1.0",
+    "type": "research"
+  },
+  {
+    "tool_name": "coordination-hierarchy",
+    "version": "0.1.0",
+    "type": "service"
+  }
+]
